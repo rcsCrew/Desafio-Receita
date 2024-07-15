@@ -4,8 +4,8 @@
 
 Esse projeto é um desafio. feito para as necessidades mais comuns em buscar receitas, colocando uma receita e mostrando como fazer. 
 # COMO EXECUTAR
-> **npm i** para instalar todas as depedencias,
-> **node server.js** para executar
+> ``npm i`` para instalar todas as depedencias,
+> ``node server.js`` para executar
 # FAQ/Perguntas Frequentes
 
 ## Para que eu usaria?
