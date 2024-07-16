@@ -4,7 +4,7 @@ module.exports = {
   PASSWORD: "",
   DB: "",
   dialect: "mysql",
-  port: ,
+  port: 17273,
   dialectOptions: {
     ssl: {
       require: ,
