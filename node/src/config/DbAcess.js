@@ -5,6 +5,12 @@ module.exports = {
   DB: "",
   dialect: "mysql",
   port: ,
+  dialectOptions: {
+    ssl: {
+      require: ,
+      rejectUnauthorized: false 
+    }
+  },
   pool: {
     max: 5,
     min: 0,
