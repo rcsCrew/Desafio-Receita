@@ -5,16 +5,14 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
-  port: dbConfig.port, 
-  dialectOptions: dbConfig.dialectOptions,
+  port: dbConfig.port, // Incluindo a porta aqui
+  dialectOptions: dbConfig.dialectOptions, // Incluindo opções de dialeto, como SSL
   pool: {
     max: dbConfig.pool.max,
     min: dbConfig.pool.min,
     acquire: dbConfig.pool.acquire,
     idle: dbConfig.pool.idle
   },
-  operatorsAliases: false,
-});
 // ----
 const db = {};
 // ----
