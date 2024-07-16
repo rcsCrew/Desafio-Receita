@@ -1,17 +1,19 @@
 const dbConfig = require("../config/DbAcess");
 const Sequelize = require("sequelize");
 
-// configuracao da DB
+// Configuração da DB
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
-  operatorsAliases: false,
+  port: dbConfig.port, 
+  dialectOptions: dbConfig.dialectOptions,
   pool: {
     max: dbConfig.pool.max,
     min: dbConfig.pool.min,
     acquire: dbConfig.pool.acquire,
     idle: dbConfig.pool.idle
-  }
+  },
+  operatorsAliases: false,
 });
 // ----
 const db = {};
