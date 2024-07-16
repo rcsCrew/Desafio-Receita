@@ -7,7 +7,7 @@ module.exports = {
   port: 17273,
   dialectOptions: {
     ssl: {
-      require: ,
+      require: true,
       rejectUnauthorized: false 
     }
   },
